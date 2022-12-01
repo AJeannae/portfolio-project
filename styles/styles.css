@@ -74,3 +74,7 @@ a.btn-branding-outline {
   border: 1px solid var(--branding-color);
   color: var(--branding-color);
 }
+
+.project-descriptions {
+  padding: 120px 60px;
+}
