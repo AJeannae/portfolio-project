@@ -1,99 +1,82 @@
-/* font-family: 'Playfair Display', serif; */
-/* font-family: 'Poppins', sans-serif; */
+/* font-family: 'Lora', serif;
+font-family: 'Playfair Display', serif; */
+
 :root {
-  --branding-color: #6c63ff;
-  --secondary-color: #f9f7fe;
-  --heading-font-family: "Playfair Display", serif;
-  --dafault-font-family: "Poppins", sans-serif;
+  --heading-font: "Playfair Display", serif;
+  --secondary-font: "Lora", serif;
+  --branding-color: rgba(181, 171, 166, 0.44);
+  --text-color: #546c78;
 }
+
 body {
-  font-family: var(--dafault-font-family);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: black;
-  font-family: var(--heading-font-family);
-  font-weight: bold;
-}
-
-h1 {
-  font-size: 96px !important;
-}
-
-h2 {
-  font-size: 64px;
-}
-
-p {
-  font-family: var(--dafault-font-family);
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 30px;
+  text-align: center;
 }
 
 .hero {
-  background-color: var(--secondary-color);
-  text-align: center;
+  background-color: var(--branding-color);
+  color: var(--text-color);
   padding: 160px 20px;
 }
 
+.hero h1 {
+  font-family: var(--heading-font);
+  font-size: 75px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
 .hero p {
-  font-family: "Poppins", sans-serif;
-  font-size: 36px;
-  font-weight: bold;
-  margin: 0;
+  font-family: var(--secondary-font);
+  font-size: 26px;
+  line-height: 1.5;
 }
 
-.hero h2 {
-  font-family: "Poppins", sans-serif;
-  line-height: 2;
-  font-weight: normal;
-  font-size: 24px;
-  color: #272142;
+.fa-solid {
+  color: var(--text-color);
+  font-size: 48px;
+  text-align: center;
 }
 
-div .btn-branding {
-  background: var(--branding-color);
-  border-radius: 4px;
-  color: white;
-  font-size: 18px;
-  line-height: 27px;
-  padding: 12px 20px;
+#recent-projects {
+  text-align: center;
+  color: var(--text-color);
+  font-family: var(--secondary-font);
 }
 
-a.btn-branding-outline {
-  font-size: 18px;
-  border-radius: 4px;
-  line-height: 27px;
-  padding: 15px 30px;
-  border: 1px solid var(--branding-color);
-  color: var(--branding-color);
+#recent-projects h2 {
+  font-size: 35px;
+  font-weight: 400;
 }
 
 .project-descriptions {
-  padding: 120px 60px;
+  padding: 110px 60px;
 }
 
-@media (max-width: 960px) {
-  h1 {
-    font-size: 60px !important;
-  }
+.project-descriptions h2 {
+  color: var(--text-color);
+  font-family: var(--secondary-font);
+  line-height: 2;
+}
 
-  h2 {
-    font-size: 44px;
-  }
+a.btn-branding {
+  border: 1px solid #f3f0ee;
+  background-color: #f3f0ee;
+  border-radius: 11px;
+  color: var(--text-color);
+  font-family: var(--secondary-font);
+  text-decoration: none;
+  margin-right: 10px;
+}
 
-  .hero {
-    padding: 80px 20px;
-  }
+a.btn-branding:hover {
+  color: #546c78;
+  border: 1px solid #f3f0ee;
+}
 
-  .project-descriptions {
-    padding: 0;
-    text-align: center;
-  }
+a.project-btn {
+  width: 400px;
+  margin: 0 auto;
+  padding: 15px;
+  text-transform: capitalize;
+  font-size: 20px;
 }
