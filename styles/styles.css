@@ -1,6 +1,8 @@
 /* font-family: 'Lora', serif;
 font-family: 'Playfair Display', serif; */
 
+/* Homepage */
+
 :root {
   --heading-font: "Playfair Display", serif;
   --secondary-font: "Lora", serif;
@@ -9,6 +11,10 @@ font-family: 'Playfair Display', serif; */
 }
 
 body {
+  text-align: center;
+}
+
+.navbar .navbar-collapse {
   text-align: center;
 }
 
@@ -79,4 +85,49 @@ a.project-btn {
   padding: 15px;
   text-transform: capitalize;
   font-size: 20px;
+}
+
+.contact-box {
+  border: 1px solid var(--branding-color);
+  background-color: var(--branding-color);
+  border-radius: 4px;
+  padding: 30px;
+  color: var(--text-color);
+  text-transform: capitalize;
+}
+
+.contact-box h3 {
+  margin: 0;
+  font-family: var(--secondary-font);
+}
+
+.social-links a {
+  margin: 0 20px;
+  color: var(--text-color);
+  background-color: #f3f0ee;
+  padding: 10px 14px;
+  border-radius: 50px;
+  font-size: 30px;
+}
+
+.footer-text {
+  color: var(--text-color);
+  font-family: var(--secondary-font);
+  margin-top: 40px;
+}
+
+/* CSS media Queries */
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 65px;
+  }
+
+  .project-descriptions {
+    padding: 0;
+  }
+
+  .project-descriptions a {
+    margin: 20px;
+  }
 }
