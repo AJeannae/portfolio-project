@@ -116,6 +116,26 @@ a.project-btn {
   margin-top: 40px;
 }
 
+/* About Page */
+
+.about-section {
+  padding: 160px 20px;
+}
+
+.about-section h1 {
+  font-size: 64px;
+  line-height: 80px;
+  font-family: var(--heading-font);
+}
+
+.about-section h2 {
+  font-size: 18px;
+  font-family: var(--secondary-font);
+}
+.about-section-content {
+  margin: 30px;
+}
+
 /* CSS media Queries */
 
 @media (max-width: 900px) {
@@ -124,6 +144,10 @@ a.project-btn {
   }
 
   .project-descriptions {
+    padding: 0;
+  }
+  .about-section {
+    text-align: center;
     padding: 0;
   }
 
