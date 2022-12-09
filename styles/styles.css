@@ -119,37 +119,68 @@ a.project-btn {
   margin-top: 40px;
 }
 
-/* About Page/Work Page */
-
-.content-container {
-  padding: 160px 20px;
-}
-
-.content h1 {
-  font-size: 64px;
-  line-height: 80px;
+/* About Page */
+.content-heading {
+  margin: 40px;
   font-family: var(--heading-font);
+  color: var(--text-color);
+  font-size: 55px;
 }
 
-.content h2 {
-  font-size: 18px;
+.image-model {
+  width: 430px;
+}
+
+.about-me-description {
+  padding: 110px 60px;
+}
+
+.content-container h3 {
+  color: #b5aba6;
+}
+
+.content-container p {
   font-family: var(--secondary-font);
+  line-height: 2;
+  opacity: 0.6;
 }
 
-.content h3 {
-  font-size: 24px;
-  line-height: 1.5;
+.education-section h2 {
+  color: var(--text-color);
   font-family: var(--heading-font);
-}
-
-.content p {
-  font-size: 14px;
-  font-family: var(--secondary-font);
-}
-
-.content {
+  font-size: 45px;
   margin: 30px;
 }
+
+.education-section p {
+  opacity: 0.6;
+}
+
+.vertical-line {
+  border-right: 3px solid #b5aba6;
+  height: 80px;
+  display: inline;
+}
+
+.skill-box {
+  border: 1px solid #f3f0ee;
+  background-color: #f3f0ee;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.skill-box p {
+  font-family: var(--secondary-font);
+  font-size: 25px;
+}
+
+.skill-list {
+  margin-bottom: 20px;
+  font-family: var(--secondary-font);
+  text-align: center;
+}
+
+/* Work Page */
 
 /* CSS media Queries */
 
