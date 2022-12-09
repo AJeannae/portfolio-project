@@ -91,7 +91,9 @@ a.project-btn {
   border: 1px solid var(--branding-color);
   background-color: var(--branding-color);
   border-radius: 4px;
-  padding: 30px;
+  width: 70%;
+  margin: 0 auto;
+  padding: 30px 110px;
   color: var(--text-color);
   text-transform: capitalize;
 }
@@ -99,6 +101,7 @@ a.project-btn {
 .contact-box h3 {
   margin: 0;
   font-family: var(--secondary-font);
+  font-size: 35px;
 }
 
 .social-links a {
@@ -165,5 +168,9 @@ a.project-btn {
 
   .project-descriptions a {
     margin: 20px;
+  }
+
+  .contact-box {
+    padding: 30px;
   }
 }
