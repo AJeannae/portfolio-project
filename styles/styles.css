@@ -116,10 +116,10 @@ a.project-btn {
 .footer-text {
   color: var(--text-color);
   font-family: var(--secondary-font);
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
-/* About Page */
+/* About Page, Work page & Contact Page styles */
 .content-heading {
   margin: 40px;
   font-family: var(--heading-font);
@@ -180,17 +180,38 @@ a.project-btn {
   text-align: center;
 }
 
-/* Work Page */
+/* Contact Page extra styles */
 
+.contact-page-content h1 {
+  font-family: var(--heading-font);
+  color: var(--text-color);
+  font-size: 55px;
+}
+.contact-page-content h3 {
+  font-family: var(--secondary-font);
+  color: rgba(0, 0, 0, 0.51);
+}
+.contact-page-footer {
+  padding-top: 90px;
+}
 /* CSS media Queries */
 
 @media (max-width: 900px) {
-  h1 {
+  .hero h1 {
     font-size: 65px;
+  }
+
+  .footer-text {
+    margin-right: 5px;
   }
 
   .project-descriptions {
     padding: 0;
+  }
+
+  .name-header,
+  p {
+    text-align: center;
   }
   .about-section {
     text-align: center;
@@ -203,5 +224,9 @@ a.project-btn {
 
   .contact-box {
     padding: 30px;
+  }
+
+  .contact-page-content h1 {
+    font-size: 45px;
   }
 }
