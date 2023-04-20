@@ -58,7 +58,8 @@ body {
   padding: 110px 60px;
 }
 
-.project-descriptions h2 {
+.project-descriptions h5,
+h2 {
   color: var(--text-color);
   font-family: var(--secondary-font);
   line-height: 2;
@@ -102,6 +103,7 @@ a.project-btn {
   margin: 0;
   font-family: var(--secondary-font);
   font-size: 35px;
+  color: #546c78;
 }
 
 .social-links a {
@@ -111,6 +113,9 @@ a.project-btn {
   padding: 10px 14px;
   border-radius: 50px;
   font-size: 30px;
+}
+footer {
+  margin: 10px;
 }
 
 .footer-text {
@@ -180,6 +185,16 @@ a.project-btn {
   text-align: center;
 }
 
+/* Card Hover Effect */
+
+.card {
+  transition: all 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.15);
+}
+
 /* Contact Page extra styles */
 
 .contact-page-content h1 {
@@ -228,5 +243,9 @@ a.project-btn {
 
   .contact-page-content h1 {
     font-size: 45px;
+  }
+  h5 {
+    text-align: center;
+    margin-top: 2px;
   }
 }
