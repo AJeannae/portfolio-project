@@ -6,12 +6,13 @@ font-family: 'Playfair Display', serif; */
 :root {
   --heading-font: "Playfair Display", serif;
   --secondary-font: "Lora", serif;
-  --branding-color: rgba(181, 171, 166, 0.44);
-  --text-color: #546c78;
+  --branding-color: #abc4ff;
+  --text-color: #ffff;
 }
 
 body {
-  text-align: center;
+  text-align: center !important;
+  background-color: #fbfefb !important;
 }
 
 .navbar .navbar-collapse {
@@ -45,13 +46,13 @@ body {
 
 #recent-projects {
   text-align: center;
-  color: var(--text-color);
   font-family: var(--secondary-font);
 }
 
 #recent-projects h2 {
   font-size: 35px;
   font-weight: 400;
+  color: #abc4ff;
 }
 
 .project-descriptions {
@@ -60,24 +61,30 @@ body {
 
 .project-descriptions h5,
 h2 {
-  color: var(--text-color);
+  color: #abc4ff;
   font-family: var(--secondary-font);
   line-height: 2;
 }
 
 a.btn-branding {
-  border: 1px solid #f3f0ee;
-  background-color: #f3f0ee;
+  border: 1px solid #86aafd;
   border-radius: 11px;
-  color: var(--text-color);
+  color: #86aafd;
   font-family: var(--secondary-font);
   text-decoration: none;
   margin-right: 10px;
 }
 
+a.btn-contact {
+  border: 1px solid white;
+  border-radius: 11px;
+  color: white;
+}
+
 a.btn-branding:hover {
-  color: #546c78;
-  border: 1px solid #f3f0ee;
+  color: #fff;
+  background-color: #86aafd;
+  border: 1px solid #86aafd;
 }
 
 a.project-btn {
@@ -103,13 +110,13 @@ a.project-btn {
   margin: 0;
   font-family: var(--secondary-font);
   font-size: 35px;
-  color: #546c78;
+  color: #fff;
 }
 
 .social-links a {
   margin: 0 20px;
   color: var(--text-color);
-  background-color: #f3f0ee;
+  background-color: #86aafd;
   padding: 10px 14px;
   border-radius: 50px;
   font-size: 30px;
@@ -119,7 +126,7 @@ footer {
 }
 
 .footer-text {
-  color: var(--text-color);
+  color: black;
   font-family: var(--secondary-font);
   margin-top: 50px;
 }
@@ -128,7 +135,7 @@ footer {
 .content-heading {
   margin: 40px;
   font-family: var(--heading-font);
-  color: var(--text-color);
+  color: #86aafd;
   font-size: 55px;
 }
 
@@ -141,7 +148,7 @@ footer {
 }
 
 .content-container h3 {
-  color: #b5aba6;
+  color: #86aafd;
 }
 
 .content-container p {
@@ -162,14 +169,14 @@ footer {
 }
 
 .vertical-line {
-  border-right: 3px solid #b5aba6;
+  border-right: 3px solid #abc4ff;
   height: 80px;
   display: inline;
 }
 
 .skill-box {
-  border: 1px solid #f3f0ee;
-  background-color: #f3f0ee;
+  border: 1px solid #abc4ff;
+  background-color: #abc4ff;
   width: 70%;
   margin: 0 auto;
 }
@@ -177,12 +184,14 @@ footer {
 .skill-box p {
   font-family: var(--secondary-font);
   font-size: 25px;
+  color: #fff;
 }
 
 .skill-list {
   margin-bottom: 20px;
   font-family: var(--secondary-font);
   text-align: center;
+  color: #ffff;
 }
 
 /* Card Hover Effect */
