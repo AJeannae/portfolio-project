@@ -6,8 +6,8 @@ font-family: 'Playfair Display', serif; */
 :root {
   --heading-font: "Playfair Display", serif;
   --secondary-font: "Lora", serif;
-  --branding-color: #abc4ff;
-  --text-color: #ffff;
+  --branding-color: #8fc0a9;
+  --text-color: #fff;
 }
 
 body {
@@ -52,7 +52,7 @@ body {
 #recent-projects h2 {
   font-size: 35px;
   font-weight: 400;
-  color: #abc4ff;
+  color: var(--branding-color);
 }
 
 .project-descriptions {
@@ -61,15 +61,15 @@ body {
 
 .project-descriptions h5,
 h2 {
-  color: #abc4ff;
+  color: #8fc0a9;
   font-family: var(--secondary-font);
   line-height: 2;
 }
 
 a.btn-branding {
-  border: 1px solid #86aafd;
+  border: 1px solid #8fc0a9;
   border-radius: 11px;
-  color: #86aafd;
+  color: #8fc0a9;
   font-family: var(--secondary-font);
   text-decoration: none;
   margin-right: 10px;
@@ -81,10 +81,16 @@ a.btn-contact {
   color: white;
 }
 
+a.btn-contact:hover {
+  color: #8fc0a9;
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
 a.btn-branding:hover {
   color: #fff;
-  background-color: #86aafd;
-  border: 1px solid #86aafd;
+  background-color: #8fc0a9;
+  border: 1px solid #8fc0a9;
 }
 
 a.project-btn {
@@ -99,7 +105,7 @@ a.project-btn {
   border: 1px solid var(--branding-color);
   background-color: var(--branding-color);
   border-radius: 4px;
-  width: 70%;
+  width: 67%;
   margin: 0 auto;
   padding: 30px 110px;
   color: var(--text-color);
@@ -116,7 +122,7 @@ a.project-btn {
 .social-links a {
   margin: 0 20px;
   color: var(--text-color);
-  background-color: #86aafd;
+  background-color: #8fc0a9;
   padding: 10px 14px;
   border-radius: 50px;
   font-size: 30px;
@@ -135,7 +141,7 @@ footer {
 .content-heading {
   margin: 40px;
   font-family: var(--heading-font);
-  color: #86aafd;
+  color: #8fc0a9;
   font-size: 55px;
 }
 
@@ -148,7 +154,7 @@ footer {
 }
 
 .content-container h3 {
-  color: #86aafd;
+  color: #8fc0a9;
 }
 
 .content-container p {
@@ -158,7 +164,7 @@ footer {
 }
 
 .education-section h2 {
-  color: var(--text-color);
+  color: #8fc0a9;
   font-family: var(--heading-font);
   font-size: 45px;
   margin: 30px;
@@ -169,14 +175,15 @@ footer {
 }
 
 .vertical-line {
-  border-right: 3px solid #abc4ff;
+  border-right: 3px solid #8fc0a9;
   height: 80px;
   display: inline;
 }
 
 .skill-box {
-  border: 1px solid #abc4ff;
-  background-color: #abc4ff;
+  border: 1px solid #8fc0a9;
+  background-color: #8fc0a9;
+  opacity: 0.7;
   width: 70%;
   margin: 0 auto;
 }
@@ -184,17 +191,17 @@ footer {
 .skill-box p {
   font-family: var(--secondary-font);
   font-size: 25px;
-  color: #fff;
+  color: black;
 }
 
 .skill-list {
   margin-bottom: 20px;
   font-family: var(--secondary-font);
   text-align: center;
-  color: #ffff;
+  color: black;
 }
 
-/* Card Hover Effect */
+/* Card Hover Effect
 
 .card {
   transition: all 0.3s;
@@ -202,13 +209,13 @@ footer {
 
 .card:hover {
   transform: scale(1.15);
-}
+} */
 
 /* Contact Page extra styles */
 
 .contact-page-content h1 {
   font-family: var(--heading-font);
-  color: var(--text-color);
+  color: var(--branding-color);
   font-size: 55px;
 }
 .contact-page-content h3 {
@@ -220,7 +227,7 @@ footer {
 }
 /* CSS media Queries */
 
-@media (max-width: 900px) {
+@media (min-width: 576px) {
   .hero h1 {
     font-size: 65px;
   }
@@ -256,5 +263,8 @@ footer {
   h5 {
     text-align: center;
     margin-top: 2px;
+  }
+  .project-card {
+    margin-bottom: 15px;
   }
 }
